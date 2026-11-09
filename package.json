@@ -11,6 +11,9 @@
     "infra:up": "docker compose up -d --wait",
     "infra:down": "docker compose down",
     "infra:logs": "docker compose logs -f",
-    "infra:status": "docker compose ps"
-  }
+    "infra:status": "docker compose ps",
+    "dev:web": "pnpm --filter @brand/web dev",
+    "build:web": "pnpm --filter @brand/web build",
+    "lint:web": "pnpm --filter @brand/web exec eslint ."
+}
 }
