@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Local files
+.DS_Store
+Thumbs.db
+uploads/
