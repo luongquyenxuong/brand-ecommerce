@@ -19,7 +19,7 @@ Dự án e-commerce full-stack TypeScript.
 
 ## Yêu cầu môi trường
 
-- Node.js 24 LTS
+- Node.js 26.x LTS
 - pnpm theo trường packageManager trong package.json
 - Docker Desktop
 - Git
