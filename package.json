@@ -14,6 +14,10 @@
     "infra:status": "docker compose ps",
     "dev:web": "pnpm --filter @brand/web dev",
     "build:web": "pnpm --filter @brand/web build",
-    "lint:web": "pnpm --filter @brand/web exec eslint ."
+    "lint:web": "pnpm --filter @brand/web exec eslint .",
+    "dev:api": "pnpm --filter @brand/api start:dev",
+    "build:api": "pnpm --filter @brand/api build",
+    "lint:api": "pnpm --filter @brand/api lint",
+    "test:api": "pnpm --filter @brand/api test --runInBand"
 }
 }
