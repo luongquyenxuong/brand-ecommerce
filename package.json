@@ -22,6 +22,7 @@
     "db:generate": "pnpm --filter @brand/api exec prisma generate",
     "db:status": "pnpm --filter @brand/api exec prisma migrate status",
     "db:seed": "pnpm --filter @brand/api exec prisma db seed",
+    "db:seed:admin": "pnpm --filter @brand/api exec tsx prisma/seed-admin.ts",
     "typecheck:web": "pnpm --filter @brand/web typecheck",
     "typecheck:api": "pnpm --filter @brand/api typecheck",
     "typecheck": "pnpm typecheck:web && pnpm typecheck:api",
@@ -29,5 +30,6 @@
     "test": "pnpm test:api",
     "build": "pnpm build:web && pnpm build:api",
     "check": "pnpm db:generate && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+    
 }
 }
