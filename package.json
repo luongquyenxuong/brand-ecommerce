@@ -18,6 +18,16 @@
     "dev:api": "pnpm --filter @brand/api start:dev",
     "build:api": "pnpm --filter @brand/api build",
     "lint:api": "pnpm --filter @brand/api lint",
-    "test:api": "pnpm --filter @brand/api test --runInBand"
+    "test:api": "pnpm --filter @brand/api test --runInBand",
+    "db:generate": "pnpm --filter @brand/api exec prisma generate",
+    "db:status": "pnpm --filter @brand/api exec prisma migrate status",
+    "db:seed": "pnpm --filter @brand/api exec prisma db seed",
+    "typecheck:web": "pnpm --filter @brand/web typecheck",
+    "typecheck:api": "pnpm --filter @brand/api typecheck",
+    "typecheck": "pnpm typecheck:web && pnpm typecheck:api",
+    "lint": "pnpm lint:web && pnpm lint:api",
+    "test": "pnpm test:api",
+    "build": "pnpm build:web && pnpm build:api",
+    "check": "pnpm db:generate && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
 }
 }
